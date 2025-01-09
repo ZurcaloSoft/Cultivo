@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "Service_Publisher\\Service_Publisher.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Site\\Site.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
