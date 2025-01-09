@@ -1,0 +1,879 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE936129-40F2-4123-9FC7-3F6DE699CA7E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGF.Site</RootNamespace>
+    <AssemblyName>SGF.Site</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44384</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net">
+      <HintPath>..\Dll\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EncryptText">
+      <HintPath>..\Dll\EncryptText.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Design, Version=2023.1.117.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\Telerik.Web.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Device.Detection">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\Telerik.Web.Device.Detection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Spreadsheet">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\AdditionalLibraries\Bin45\Telerik.Web.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\Telerik.Web.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\Telerik.Web.UI.Skins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2023.1.104.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.DrawingML, Version=2023.1.104.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.DrawingML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2023.1.104.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2023.1.104.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2023.1.104.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2023.1.104.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCAJAX\2023.1.117.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administracion\Frm_Almacen.aspx" />
+    <Content Include="Administracion\Frm_Bodega.aspx" />
+    <Content Include="Administracion\Frm_Botones.aspx" />
+    <Content Include="Administracion\Frm_Empresa.aspx" />
+    <Content Include="Administracion\Frm_Formulario.aspx" />
+    <Content Include="Administracion\Frm_Modulo.aspx" />
+    <Content Include="Administracion\Frm_Sucursal.aspx" />
+    <Content Include="Comercial\Frm_Cliente.aspx" />
+    <Content Include="Comercial\Frm_Daes.aspx" />
+    <Content Include="Comercial\Frm_Factura.aspx" />
+    <Content Include="Comercial\Frm_LineasAereas.aspx" />
+    <Content Include="Comercial\Frm_OrdenFija.aspx" />
+    <Content Include="Comercial\Frm_Vendedor.aspx" />
+    <Content Include="Comercial\Frm_VentaExportacion.aspx" />
+    <Content Include="Comercial\Frm_VentaNacional.aspx" />
+    <Content Include="Compras\Frm_Proveedor.aspx" />
+    <Content Include="Compras\Frm_ProveedorBodega.aspx" />
+    <Content Include="Compras\Frm_ProveedorPrecio.aspx" />
+    <Content Include="Compras\Frm_ProveedorVariedad.aspx" />
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SEG_Botones_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SEG_Formularios_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SEG_Usuarios_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Boton.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Clasificador.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Clasificador_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Formulario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Formulario_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Modulo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_ParametrosPassword.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Persona.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Persona_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_TipoClasificador.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_TipoPersona.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_TipoUsuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Usuario_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Variedad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Variedad_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_LineaAerea.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Producto_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_CampoCultivo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_CultivoArea.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_CultivoBloque.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_CultivoCama.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_CultivoCuadro.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_CultivoLado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_CultivoNave.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Parametro.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_CultivoCama_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_CultivoCuadro_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_ActividadesMapaCultivo_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SP_ActividadesMapaCultivo_Buscar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SP_ActividadesMapaCultivo_BuscarVariedadCama_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SP_ActividadesMapaCultivo_BuscarResponsablePorCama_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_ProveedorVariedad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_ProveedorVariedad_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.CO_PROVEEDOR.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_ProveedorPrecio.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_ProveedorPrecio_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.CO_ARTICULO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.CO_ALMACEN.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.CO_EMPRESA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.CO_BODEGA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Bodega_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_ProveedorBodega.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Proveedor_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Proyeccion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_ProyeccionProduccion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_ProyeccionProduccion_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_Proyeccion_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_VariedadTallosPorMalla.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_VariedadTallosPorMalla_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_DAES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.SGF_DAES_VTA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SGF_Service\SGF.Site.SGF_Service.CO_VENDEDOR.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\SGF_Service\SGF_Service.disco" />
+    <None Include="Connected Services\SGF_Service\configuration91.svcinfo" />
+    <None Include="Connected Services\SGF_Service\configuration.svcinfo" />
+    <None Include="Connected Services\SGF_Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Controles\Control_Multiple.ascx" />
+    <Content Include="Administracion\Frm_BuscarPersona.aspx" />
+    <Content Include="Cultivo\Frm_Bloques.aspx" />
+    <Content Include="Cultivo\Frm_ActividadesMapaCultivo.aspx" />
+    <Content Include="Cultivo\Frm_BuscarProveedor.aspx" />
+    <Content Include="Cultivo\Frm_EnvioDeFlor.aspx" />
+    <Content Include="Cultivo\Frm_ProyeccionProduccion.aspx" />
+    <Content Include="Cultivo\Frm_Temporada.aspx" />
+    <Content Include="Cultivo\Frm_Variedades.aspx" />
+    <Content Include="Empaque\Frm_BajasFlor.aspx" />
+    <Content Include="Empaque\Frm_CargaDisponibilidad.aspx" />
+    <Content Include="Empaque\Frm_EmpaquePiezas.aspx" />
+    <Content Include="Images\admin.png" />
+    <Content Include="Images\Agregar2.png" />
+    <Content Include="Images\AgregarDetalle.png" />
+    <Content Include="Images\Ayuda.png" />
+    <Content Include="Images\back2.png" />
+    <Content Include="Images\Banner-Floricultura.png" />
+    <Content Include="Images\botonComercial.png" />
+    <Content Include="Images\botonCultivo.png" />
+    <Content Include="Images\botonEmpaque.png" />
+    <Content Include="Images\botonPoscosecha.png" />
+    <Content Include="Images\botonRecepcion.png" />
+    <Content Include="Images\botonTH.png" />
+    <Content Include="Images\btncartera.png" />
+    <Content Include="Images\campo.png" />
+    <Content Include="Images\cargandoMensaje.gif" />
+    <Content Include="Images\carretilla.png" />
+    <Content Include="Images\clean.png" />
+    <Content Include="Images\Complete.png" />
+    <Content Include="Images\construccion.png" />
+    <Content Include="Images\convenio.png" />
+    <Content Include="Images\copy.png" />
+    <Content Include="Images\declaracion.png" />
+    <Content Include="Images\excel.png" />
+    <Content Include="Images\garden.png" />
+    <Content Include="Images\Ingresar2.png" />
+    <Content Include="Images\injerto.png" />
+    <Content Include="Images\Invernadero.JPG" />
+    <Content Include="Images\invernadero.png" />
+    <Content Include="Images\liquidar.png" />
+    <Content Include="Images\lista.png" />
+    <Content Include="Images\loadinfo.net.gif" />
+    <Content Include="Images\localizar.png" />
+    <Content Include="Images\NoTengo.png" />
+    <Content Include="Images\notificacion.png" />
+    <Content Include="Images\Nuevo.png" />
+    <Content Include="Images\nuevo2-icono.png" />
+    <Content Include="Images\Pagar.png" />
+    <Content Include="Images\Plant.gif" />
+    <Content Include="Images\posesion.png" />
+    <Content Include="Images\Predio.JPG" />
+    <Content Include="Images\prev.png" />
+    <Content Include="Images\Recuperar.gif" />
+    <Content Include="Images\regresar2.png" />
+    <Content Include="Images\removerTierra.png" />
+    <Content Include="Images\Renovacion.png" />
+    <Content Include="Images\RePrint.png" />
+    <Content Include="Images\restart.png" />
+    <Content Include="Images\Salir.png" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\Sembrar.png" />
+    <Content Include="Images\Sembrar1.png" />
+    <Content Include="Images\Sembrar2.png" />
+    <Content Include="Images\Spinner.gif" />
+    <Content Include="Images\tractor.png" />
+    <Content Include="Images\working.jpg" />
+    <Content Include="Images\Zonificacion.JPG" />
+    <Content Include="JavaScript\sweetalert.min.js" />
+    <Content Include="Poscosecha\Frm_ClasificacionDeFlor.aspx" />
+    <Content Include="Poscosecha\Frm_DistribucionMalla.aspx" />
+    <Content Include="Poscosecha\Frm_EtiquetadoFlorExportacion.aspx" />
+    <Content Include="Poscosecha\Frm_RecepcionFlor.aspx" />
+    <Content Include="Seguridad\Frm_ParametroPassword.aspx" />
+    <Content Include="_Blank.aspx" />
+    <Content Include="Administracion\Frm_Parametros.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Administracion\Frm_Clasificador.aspx" />
+    <Content Include="Images\MasterPage_Blanco.jpg" />
+    <Content Include="Images\MasterPage_Inicio.jpg" />
+    <Content Include="TalentoHumano\Frm_Persona.aspx" />
+    <Content Include="Administracion\Frm_TipoClasificador.aspx" />
+    <Content Include="TalentoHumano\Frm_TipoPersona.aspx" />
+    <Content Include="Administracion\Frm_TipoUsuario.aspx" />
+    <Content Include="Administracion\Frm_Usuario.aspx" />
+    <Content Include="Images\Actualizar.png" />
+    <Content Include="Images\Add.png" />
+    <Content Include="Images\addItem.png" />
+    <Content Include="Images\Agregar.png" />
+    <Content Include="Images\aprobar.png" />
+    <Content Include="Images\Banner-Floricultura.jpg" />
+    <Content Include="Images\Borrar.png" />
+    <Content Include="Images\botonBuscar.png" />
+    <Content Include="Images\botonVacio.png" />
+    <Content Include="Images\Buscar.png" />
+    <Content Include="Images\BuscarModal.png" />
+    <Content Include="Images\CerrarSesion.png" />
+    <Content Include="Images\Cotizar.png" />
+    <Content Include="Images\Delete.png" />
+    <Content Include="Images\dot_clear.gif" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\encontrar.png" />
+    <Content Include="Images\Entregar.png" />
+    <Content Include="Images\Exit_s1.jpg" />
+    <Content Include="Images\Exit_s2.png" />
+    <Content Include="Images\Grabar.png" />
+    <Content Include="Images\Grabar1.png" />
+    <Content Include="Images\Ingresar.png" />
+    <Content Include="Images\mostrar.png" />
+    <Content Include="Images\Ok.png" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\ReCargar.png" />
+    <Content Include="Images\rechazar.png" />
+    <Content Include="Images\Regresar.png" />
+    <Content Include="Images\reinspeccion.png" />
+    <Content Include="Images\Revisar1.png" />
+    <Content Include="Images\Revisar2.png" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\Start.png" />
+    <Content Include="Images\TabularData.png" />
+    <Content Include="Images\verificar.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Seguridad\Frm_CambiarPassword.aspx" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion\Frm_Almacen.aspx.cs">
+      <DependentUpon>Frm_Almacen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Almacen.aspx.designer.cs">
+      <DependentUpon>Frm_Almacen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_Bodega.aspx.cs">
+      <DependentUpon>Frm_Bodega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Bodega.aspx.designer.cs">
+      <DependentUpon>Frm_Bodega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_Botones.aspx.cs">
+      <DependentUpon>Frm_Botones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Botones.aspx.designer.cs">
+      <DependentUpon>Frm_Botones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_Empresa.aspx.cs">
+      <DependentUpon>Frm_Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Empresa.aspx.designer.cs">
+      <DependentUpon>Frm_Empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_Formulario.aspx.cs">
+      <DependentUpon>Frm_Formulario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Formulario.aspx.designer.cs">
+      <DependentUpon>Frm_Formulario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_Modulo.aspx.cs">
+      <DependentUpon>Frm_Modulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Modulo.aspx.designer.cs">
+      <DependentUpon>Frm_Modulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_Parametros.aspx.cs">
+      <DependentUpon>Frm_Parametros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Parametros.aspx.designer.cs">
+      <DependentUpon>Frm_Parametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_Sucursal.aspx.cs">
+      <DependentUpon>Frm_Sucursal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Sucursal.aspx.designer.cs">
+      <DependentUpon>Frm_Sucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\Frm_Cliente.aspx.cs">
+      <DependentUpon>Frm_Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comercial\Frm_Cliente.aspx.designer.cs">
+      <DependentUpon>Frm_Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\Frm_Daes.aspx.cs">
+      <DependentUpon>Frm_Daes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comercial\Frm_Daes.aspx.designer.cs">
+      <DependentUpon>Frm_Daes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\Frm_Factura.aspx.cs">
+      <DependentUpon>Frm_Factura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comercial\Frm_Factura.aspx.designer.cs">
+      <DependentUpon>Frm_Factura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\Frm_LineasAereas.aspx.cs">
+      <DependentUpon>Frm_LineasAereas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comercial\Frm_LineasAereas.aspx.designer.cs">
+      <DependentUpon>Frm_LineasAereas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\Frm_OrdenFija.aspx.cs">
+      <DependentUpon>Frm_OrdenFija.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comercial\Frm_OrdenFija.aspx.designer.cs">
+      <DependentUpon>Frm_OrdenFija.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\Frm_Vendedor.aspx.cs">
+      <DependentUpon>Frm_Vendedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comercial\Frm_Vendedor.aspx.designer.cs">
+      <DependentUpon>Frm_Vendedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\Frm_VentaExportacion.aspx.cs">
+      <DependentUpon>Frm_VentaExportacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comercial\Frm_VentaExportacion.aspx.designer.cs">
+      <DependentUpon>Frm_VentaExportacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\Frm_VentaNacional.aspx.cs">
+      <DependentUpon>Frm_VentaNacional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comercial\Frm_VentaNacional.aspx.designer.cs">
+      <DependentUpon>Frm_VentaNacional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Frm_Proveedor.aspx.cs">
+      <DependentUpon>Frm_Proveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\Frm_Proveedor.aspx.designer.cs">
+      <DependentUpon>Frm_Proveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Frm_ProveedorBodega.aspx.cs">
+      <DependentUpon>Frm_ProveedorBodega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\Frm_ProveedorBodega.aspx.designer.cs">
+      <DependentUpon>Frm_ProveedorBodega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Frm_ProveedorPrecio.aspx.cs">
+      <DependentUpon>Frm_ProveedorPrecio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\Frm_ProveedorPrecio.aspx.designer.cs">
+      <DependentUpon>Frm_ProveedorPrecio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Frm_ProveedorVariedad.aspx.cs">
+      <DependentUpon>Frm_ProveedorVariedad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\Frm_ProveedorVariedad.aspx.designer.cs">
+      <DependentUpon>Frm_ProveedorVariedad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SGF_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Control_Multiple.ascx.cs">
+      <DependentUpon>Control_Multiple.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Control_Multiple.ascx.designer.cs">
+      <DependentUpon>Control_Multiple.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Cultivo\Frm_Bloques.aspx.cs">
+      <DependentUpon>Frm_Bloques.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cultivo\Frm_Bloques.aspx.designer.cs">
+      <DependentUpon>Frm_Bloques.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cultivo\Frm_ActividadesMapaCultivo.aspx.cs">
+      <DependentUpon>Frm_ActividadesMapaCultivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cultivo\Frm_ActividadesMapaCultivo.aspx.designer.cs">
+      <DependentUpon>Frm_ActividadesMapaCultivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cultivo\Frm_BuscarProveedor.aspx.cs">
+      <DependentUpon>Frm_BuscarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cultivo\Frm_BuscarProveedor.aspx.designer.cs">
+      <DependentUpon>Frm_BuscarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cultivo\Frm_EnvioDeFlor.aspx.cs">
+      <DependentUpon>Frm_EnvioDeFlor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cultivo\Frm_EnvioDeFlor.aspx.designer.cs">
+      <DependentUpon>Frm_EnvioDeFlor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cultivo\Frm_ProyeccionProduccion.aspx.cs">
+      <DependentUpon>Frm_ProyeccionProduccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cultivo\Frm_ProyeccionProduccion.aspx.designer.cs">
+      <DependentUpon>Frm_ProyeccionProduccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cultivo\Frm_Temporada.aspx.cs">
+      <DependentUpon>Frm_Temporada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cultivo\Frm_Temporada.aspx.designer.cs">
+      <DependentUpon>Frm_Temporada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cultivo\Frm_Variedades.aspx.cs">
+      <DependentUpon>Frm_Variedades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cultivo\Frm_Variedades.aspx.designer.cs">
+      <DependentUpon>Frm_Variedades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empaque\Frm_BajasFlor.aspx.cs">
+      <DependentUpon>Frm_BajasFlor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empaque\Frm_BajasFlor.aspx.designer.cs">
+      <DependentUpon>Frm_BajasFlor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empaque\Frm_CargaDisponibilidad.aspx.cs">
+      <DependentUpon>Frm_CargaDisponibilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empaque\Frm_CargaDisponibilidad.aspx.designer.cs">
+      <DependentUpon>Frm_CargaDisponibilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empaque\Frm_EmpaquePiezas.aspx.cs">
+      <DependentUpon>Frm_EmpaquePiezas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empaque\Frm_EmpaquePiezas.aspx.designer.cs">
+      <DependentUpon>Frm_EmpaquePiezas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="Administracion\Frm_Clasificador.aspx.cs">
+      <DependentUpon>Frm_Clasificador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Clasificador.aspx.designer.cs">
+      <DependentUpon>Frm_Clasificador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_BuscarPersona.aspx.cs">
+      <DependentUpon>Frm_BuscarPersona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_BuscarPersona.aspx.designer.cs">
+      <DependentUpon>Frm_BuscarPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poscosecha\Frm_ClasificacionDeFlor.aspx.cs">
+      <DependentUpon>Frm_ClasificacionDeFlor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Poscosecha\Frm_ClasificacionDeFlor.aspx.designer.cs">
+      <DependentUpon>Frm_ClasificacionDeFlor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poscosecha\Frm_DistribucionMalla.aspx.cs">
+      <DependentUpon>Frm_DistribucionMalla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Poscosecha\Frm_DistribucionMalla.aspx.designer.cs">
+      <DependentUpon>Frm_DistribucionMalla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poscosecha\Frm_EtiquetadoFlorExportacion.aspx.cs">
+      <DependentUpon>Frm_EtiquetadoFlorExportacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Poscosecha\Frm_EtiquetadoFlorExportacion.aspx.designer.cs">
+      <DependentUpon>Frm_EtiquetadoFlorExportacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poscosecha\Frm_RecepcionFlor.aspx.cs">
+      <DependentUpon>Frm_RecepcionFlor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Poscosecha\Frm_RecepcionFlor.aspx.designer.cs">
+      <DependentUpon>Frm_RecepcionFlor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Frm_ParametroPassword.aspx.cs">
+      <DependentUpon>Frm_ParametroPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Frm_ParametroPassword.aspx.designer.cs">
+      <DependentUpon>Frm_ParametroPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TalentoHumano\Frm_Persona.aspx.cs">
+      <DependentUpon>Frm_Persona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TalentoHumano\Frm_Persona.aspx.designer.cs">
+      <DependentUpon>Frm_Persona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_TipoClasificador.aspx.cs">
+      <DependentUpon>Frm_TipoClasificador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_TipoClasificador.aspx.designer.cs">
+      <DependentUpon>Frm_TipoClasificador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TalentoHumano\Frm_TipoPersona.aspx.cs">
+      <DependentUpon>Frm_TipoPersona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TalentoHumano\Frm_TipoPersona.aspx.designer.cs">
+      <DependentUpon>Frm_TipoPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_TipoUsuario.aspx.cs">
+      <DependentUpon>Frm_TipoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_TipoUsuario.aspx.designer.cs">
+      <DependentUpon>Frm_TipoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Frm_Usuario.aspx.cs">
+      <DependentUpon>Frm_Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Frm_Usuario.aspx.designer.cs">
+      <DependentUpon>Frm_Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Me.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad\Frm_CambiarPassword.aspx.cs">
+      <DependentUpon>Frm_CambiarPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Frm_CambiarPassword.aspx.designer.cs">
+      <DependentUpon>Frm_CambiarPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SGF_Site.Master.cs">
+      <DependentUpon>SGF_Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SGF_Site.Master.designer.cs">
+      <DependentUpon>SGF_Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SGF_Site_Gen.Master.cs">
+      <DependentUpon>SGF_Site_Gen.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SGF_Site_Gen.Master.designer.cs">
+      <DependentUpon>SGF_Site_Gen.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="_Blank.aspx.cs">
+      <DependentUpon>_Blank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Blank.aspx.designer.cs">
+      <DependentUpon>_Blank.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SGF_Service\Logic.wsdl" />
+    <None Include="Connected Services\SGF_Service\SGF_Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SGF_Service\SGF_Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SGF_Service\SGF_Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SGF_Service\SGF_Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SGF_Service\SGF_Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SGF_Service\SGF_Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="SGF_Site_Gen.Master" />
+    <Content Include="SGF_Site.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modal\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SGF_Service\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58153</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44384/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

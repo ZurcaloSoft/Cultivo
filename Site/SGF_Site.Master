@@ -1,0 +1,413 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SGF_Site.master.cs" Inherits="SGF.Site.SGF_Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SISTEMA GESTIÓN FLORICOLA</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <style>
+        .content-background {
+            background-image: url('../images/working.png'); /* Ruta relativa a la imagen */
+            background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-position: center center; /* Centra la imagen */
+            min-height: 100vh; /* Asegura que el contenedor tenga un tamaño mínimo */
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        &nbsp;<telerik:RadScriptManager ID="RSM" runat="server">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js"></asp:ScriptReference>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js"></asp:ScriptReference>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js"></asp:ScriptReference>
+            </Scripts>
+        </telerik:RadScriptManager>
+        <table cellpadding="0" cellspacing="0" width="1000" style="border-color: #69C; border-width: 1px; border-style: solid; background: #FFF"
+            align="center">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="960px">
+                        <tr>
+                            <td colspan="5">
+                                <img name="MasterPage_r1_c1" src="../Images/Banner-Floricultura.png" width="960px"
+                                    border="0" id="MasterPage_r1_c1" alt="" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="5">
+                                <table width="100%">
+                                    <tr>
+                                        <td>
+                                            <a href="../Default.aspx">
+                                                <img name="MasterPage_Inicio" src="../Images/MasterPage_Inicio.jpg" border="0" style="height: 51px; width: 70px" id="MasterPage_Inicio" alt="" /></a>
+                                        </td>
+                                        <td class="auto-style1" align="right" width="100%">
+                                            <%= GetNombre()%>
+                                        (<%= GetUsuario()%>) -
+                                            <%= GetDependencia()%>
+                                        </td>
+                                        <td align="right" class="auto-style2">
+                                            <a href="../Login.aspx">
+                                                <img src="../Images/Exit_s1.jpg" alt="" border="0" style="height: 51px" /></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <telerik:RadMenu runat="server" ID="menu" Style="z-index: 1000;" RenderMode="Lightweight" EnableRoundedCorners="true" EnableShadows="true">
+                                    <Items>
+                                        <telerik:RadMenuItem Text="Administración" Visible="false">
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tipo Clasificador" NavigateUrl="~/Administracion/Frm_TipoClasificador.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Clasificador" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=00000000-0000-0000-0000-000000000000" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Parámetros" NavigateUrl="~/Administracion/Frm_Parametros.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Grupo" NavigateUrl="~/Administracion/Frm_Grupo.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Empresa" NavigateUrl="~/Administracion/Frm_Empresa.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Sucursal" NavigateUrl="~/Administracion/Frm_Sucursal.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Bodega" NavigateUrl="~/Administracion/Frm_Bodega.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tipo Usuario" NavigateUrl="~/Administracion/Frm_TipoUsuario.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Usuario" NavigateUrl="~/Administracion/Frm_Usuario.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Módulo" NavigateUrl="~/Administracion/Frm_Modulo.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Formularios" NavigateUrl="~/Administracion/Frm_Formulario.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Botones" NavigateUrl="~/Administracion/Frm_Botones.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Parámetros Contraseña" NavigateUrl="~/Seguridad/Frm_ParametroPassword.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Almacén" NavigateUrl="~/Administracion/Frm_Almacen.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem Text="Cultivo" Visible="false">
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Envío de Flor" NavigateUrl="~/Cultivo/Frm_EnvioDeFlor.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Mapa de Cultivo" NavigateUrl="~/Cultivo/Frm_Bloques.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Variedades" NavigateUrl="~/Cultivo/Frm_Variedades.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Áreas" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=E03E4E4D-6492-45B1-BA5F-EDE1C416C73D" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tallos por Malla" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=4498C717-2896-4934-B6BC-545E8EA20DD2" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Actividades" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=2CF38792-6533-4FA4-B304-0DE2A7EBA47C" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tipos Problema de Flor" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=0B29F36C-2E8B-4298-B3E0-675F3F04DEF7" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Problemas de Flor" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=7F3A7F8E-265C-40DD-BFD8-4E8F82647010" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Estado de la Planta" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=F39FA841-A8CA-4B41-A837-7C4B4955BE86" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Estado de la Variedad" NavigateUrl="~/Administracion/Frm_Clasificador.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tipo de Flor" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=9BA20E91-8E64-4068-BC1A-462E26363A57" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Unidad de Cultivo" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=16D2C551-D54D-462E-9A1C-47D093129706" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Temporada" NavigateUrl="~/Cultivo/Frm_Temporada.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Proyección de Producción" NavigateUrl="~/Cultivo/Frm_ProyeccionProduccion.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem Text="Poscosecha" Visible="false">
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Recepción de Flor" NavigateUrl="~/Poscosecha/Frm_RecepcionFlor.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Distribución de Mallas" NavigateUrl="~/Poscosecha/Frm_DistribucionMalla.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Clasificación de Flor" NavigateUrl="~/Poscosecha/Frm_ClasificacionDeFlor.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Etiquetado Flor de Exportación" NavigateUrl="~/Poscosecha/Frm_EtiquetadoFlorExportacion.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Mesas" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?type=1A3FA34D-8E49-4211-A05C-C09927439D46" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Longitudes" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=1984F8A1-850F-4C1E-9CCC-A6D0C9171003" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tallos por Bonche" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=C2609DB5-0E96-4625-90C6-B3CB79EBB948" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Color" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=F8D70789-156F-4A38-904D-E33538D59B1B" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Calidad Flor Exportación" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=59397B48-46C0-4314-9673-F3293114BBCB" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Lámina Bonche" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=11B9707F-381C-4014-BCDF-A640F277713F" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Productos de Flor" NavigateUrl="~/Administracion/Frm_Clasificador.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Cuartos Fríos Fincas" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=513331CB-4EEF-4BBA-8E2D-2CE74C2D9318" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Punto de Corte" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=BED71956-7B9E-47CC-8F47-4BB0ED991C91" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem Text="Empaque" Visible="false">
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Empaque de Piezas" NavigateUrl="~/Empaque/Frm_EmpaquePiezas.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Carga de Disponibilidad" NavigateUrl="~/Empaque/Frm_CargaDisponibilidad.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Bajas de Flor" NavigateUrl="~/Empaque/Frm_BajasFlor.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tipos de Caja" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=662A8A85-211B-45C1-B2AE-1BCBE69C8237" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Cajas" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=3140CF3B-C4BB-434F-A67A-3D46E80E93DC" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Bonches por Caja" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=D2726425-33FF-4178-98B9-CBD77E2816D1" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem Text="Comercial" Visible="false">
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Daes" NavigateUrl="~/Comercial/Frm_Daes.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Ordenes Fijas" NavigateUrl="~/Comercial/Frm_OrdenFija.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+<%--                                                <telerik:RadMenuItem Text="Venta Exportación" NavigateUrl="~/Comercial/Frm_VentaExportacion.aspx" Visible="false">
+                                                </telerik:RadMenuItem>--%>
+                                                <telerik:RadMenuItem Text="Venta Exportación" NavigateUrl="http://localhost:8091/UI/index.html" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Venta Nacional" NavigateUrl="~/Comercial/Frm_VentaNacional.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Facturas" NavigateUrl="~/Comercial/Frm_Factura.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Clientes" NavigateUrl="~/Comercial/Frm_Cliente.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tipo Cliente" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=8437712C-5BB6-4D64-9C16-9317A0422B49" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Marcaciones" NavigateUrl="~/Administracion/Frm_Clasificador.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Líneas Aéreas" NavigateUrl="~/Comercial/Frm_LineasAereas.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Países" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=6CA88FE4-81C3-4E64-AAC3-79F8E62A2BD9" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Ciudades" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=56195587-9FBA-452E-9A41-92CC6DBC998B" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Vendedores" NavigateUrl="~/Comercial/Frm_Vendedor.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Cuartos Fríos (Carguera)" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=D54A7A61-52B6-4F05-8C3A-30C879C1E12E" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Aduanas" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=EC0C780D-FA20-487C-84BD-0844E7C398CB" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Cargueras" NavigateUrl="~/TalentoHumano/Frm_Persona.aspx?Type=8E4F8CD1-964E-47CB-ACF1-0A28BE059B3F" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <%--                                            <Items>
+                                                <telerik:RadMenuItem Text="Estado Cliente" NavigateUrl="~/Administracion/Frm_Clasificador.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>--%>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Estado Venta" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=7F490CE2-4AAE-4CDB-BF8D-02F58F58F2F1" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem Text="Recepción" Visible="false">
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tipo de Proveedor" NavigateUrl="~/Administracion/Frm_Clasificador.aspx?Type=C2360486-3AD7-46B0-90C3-1AD97E261C37" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Proveedores" NavigateUrl="~/Compras/Frm_Proveedor.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Proveedor Variedad" NavigateUrl="~/Compras/Frm_ProveedorVariedad.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Proveedor Precios" NavigateUrl="~/Compras/Frm_ProveedorPrecio.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Proveedor Bodega" NavigateUrl="~/Compras/Frm_ProveedorBodega.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem Text="Talento Humano" Visible="false">
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Tipo Persona" NavigateUrl="~/TalentoHumano/Frm_TipoPersona.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Persona" NavigateUrl="~/TalentoHumano/Frm_Persona.aspx?Type=38B30AFB-3437-4648-9CCA-B25BFFFD7176" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem Text="General">
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Cambio Contraseña" NavigateUrl="~/Seguridad/Frm_CambiarPassword.aspx" Visible="true">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem Text="Reportes" Visible="false">
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Resumen General" NavigateUrl="~/ReporteFichaPoa.aspx" Visible="false">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                            <Items>
+                                                <telerik:RadMenuItem Text="Detalle" NavigateUrl="~/DatosDependencias.aspx" Visible="true">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenu>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table cellpadding="10" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                        <td>
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="center" class="credits">
+                                <br />
+                                <br />
+                                Desarrollado por: <a href="http://www.google.com" target="_blank">ZURCALO SOFT</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+    </form>
+</body>
+</html>
