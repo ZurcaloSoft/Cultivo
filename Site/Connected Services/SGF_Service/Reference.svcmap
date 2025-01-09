@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="f32bc4fe-2d6d-447f-bb51-493b7b4aad4e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57843/SGF_Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SGF_Service4.xsd" MetadataType="Schema" ID="98d8b7c9-8948-4340-9abf-8c1339047f8c" SourceId="1" SourceUrl="http://localhost:57843/SGF_Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="SGF_Service.disco" MetadataType="Disco" ID="7af7e085-3e5e-465e-98c7-af18f798b450" SourceId="1" SourceUrl="http://localhost:57843/SGF_Service.svc?disco" />
+    <MetadataFile FileName="SGF_Service.xsd" MetadataType="Schema" ID="8036ea9a-cae9-4760-bcf4-80cac7239d83" SourceId="1" SourceUrl="http://localhost:57843/SGF_Service.svc?xsd=xsd4" />
+    <MetadataFile FileName="SGF_Service1.xsd" MetadataType="Schema" ID="37834b2d-7b68-42ac-ab4e-f6d8bde95391" SourceId="1" SourceUrl="http://localhost:57843/SGF_Service.svc?xsd=xsd5" />
+    <MetadataFile FileName="Logic.wsdl" MetadataType="Wsdl" ID="21c29f37-3ddf-4776-9e88-73537b704f5d" SourceId="1" SourceUrl="http://localhost:57843/SGF_Service.svc?wsdl" />
+    <MetadataFile FileName="SGF_Service2.xsd" MetadataType="Schema" ID="f6a9b884-7ce2-4888-acd5-dbbc1d79163d" SourceId="1" SourceUrl="http://localhost:57843/SGF_Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="SGF_Service3.xsd" MetadataType="Schema" ID="49798055-47f9-439d-87e3-6b5c71e61aeb" SourceId="1" SourceUrl="http://localhost:57843/SGF_Service.svc?xsd=xsd3" />
+    <MetadataFile FileName="SGF_Service5.xsd" MetadataType="Schema" ID="30874896-9ce7-4f65-8b1d-19544e402da0" SourceId="1" SourceUrl="http://localhost:57843/SGF_Service.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

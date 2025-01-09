@@ -1,0 +1,3483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57843/SGF_Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:57843/SGF_Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SGF.DataAccess" />
+  <xs:element name="ProveedorPrecio_ObtenerPorFiltro_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="variedad" type="q1:guid" />
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_ObtenerPorFiltro_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorPrecio_ObtenerPorFiltro_VTAResult" nillable="true" type="q2:ArrayOfSGF_ProveedorPrecio_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_ValidarExistencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="variedad" type="q3:guid" />
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_ValidarExistenciaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ProveedorPrecio_ValidarExistenciaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="registro" nillable="true" type="q4:SGF_ProveedorVariedad" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="registro" nillable="true" type="q5:SGF_ProveedorVariedad" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Id" type="q6:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorVariedad_ObtenerPorIDResult" nillable="true" type="q7:SGF_ProveedorVariedad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorVariedad_ObtenerTodoResult" nillable="true" type="q8:ArrayOfSGF_ProveedorVariedad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerPorFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="variedad" type="q9:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerPorFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorVariedad_ObtenerPorFiltroResult" nillable="true" type="q10:ArrayOfSGF_ProveedorVariedad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerPorPVE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="variedad" type="q11:guid" />
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerPorPVEResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorVariedad_ObtenerPorPVEResult" nillable="true" type="q12:SGF_ProveedorVariedad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerPorFiltro_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="variedad" type="q13:guid" />
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ObtenerPorFiltro_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorVariedad_ObtenerPorFiltro_VTAResult" nillable="true" type="q14:ArrayOfSGF_ProveedorVariedad_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ValidarExistencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="variedad" type="q15:guid" />
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorVariedad_ValidarExistenciaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ProveedorVariedad_ValidarExistenciaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID" type="q16:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proyeccion_ObtenerPorIDResult" nillable="true" type="q17:SGF_Proyeccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID" type="q18:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proyeccion_ObtenerPorID_VTAResult" nillable="true" type="q19:SGF_Proyeccion_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorEmpresaProveedorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorEmpresaProveedorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proyeccion_ObtenerPorEmpresaProveedorIDResult" nillable="true" type="q20:ArrayOfSGF_Proyeccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorRecepcionEmpresaID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorRecepcionEmpresaIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proyeccion_ObtenerPorRecepcionEmpresaIDResult" nillable="true" type="q21:ArrayOfSGF_Proyeccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorFechaEmpresaProveedorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorFechaEmpresaProveedorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proyeccion_ObtenerPorFechaEmpresaProveedorIDResult" nillable="true" type="q22:ArrayOfSGF_Proyeccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorEmpresaFecha">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorEmpresaFechaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proyeccion_ObtenerPorEmpresaFechaResult" nillable="true" type="q23:ArrayOfSGF_Proyeccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorFecha">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="estado" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ObtenerPorFechaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proyeccion_ObtenerPorFechaResult" nillable="true" type="q24:ArrayOfSGF_Proyeccion_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newProyeccion" nillable="true" type="q25:SGF_Proyeccion" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ActualizarTotales">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ProyeccionID" type="q26:guid" />
+        <xs:element minOccurs="0" name="usr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ActualizarTotalesResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ActualizarEstado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ProyeccionID" type="q27:guid" />
+        <xs:element minOccurs="0" name="estado" type="xs:int" />
+        <xs:element minOccurs="0" name="usr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proyeccion_ActualizarEstadoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newProyeccion" nillable="true" type="q28:SGF_ProyeccionProduccion" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_GrabarEnvio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q29:guid" />
+        <xs:element minOccurs="0" name="usr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_GrabarEnvioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_ActualizarEnvio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newProyeccion" nillable="true" type="q30:SGF_ProyeccionProduccion" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_ActualizarEnvioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_ActualizarRecepcion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newProyeccion" nillable="true" type="q31:SGF_ProyeccionProduccion" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_ActualizarRecepcionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_GrabarRecepcion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q32:guid" />
+        <xs:element minOccurs="0" name="usr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProyeccionProduccion_GrabarRecepcionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID" type="q33:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="SGF_ProyeccionProduccion_ObtenerPorIDResult" nillable="true" type="q34:SGF_ProyeccionProduccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID" type="q35:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="SGF_ProyeccionProduccion_ObtenerPorID_VTAResult" nillable="true" type="q36:SGF_ProyeccionProduccion_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorProveedorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorProveedorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="SGF_ProyeccionProduccion_ObtenerPorProveedorIDResult" nillable="true" type="q37:ArrayOfSGF_ProyeccionProduccion_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorProyeccionID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID" type="q38:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorProyeccionIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="SGF_ProyeccionProduccion_ObtenerPorProyeccionIDResult" nillable="true" type="q39:ArrayOfSGF_ProyeccionProduccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorProyeccionID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID" type="q40:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorProyeccionID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="SGF_ProyeccionProduccion_ObtenerPorProyeccionID_VTAResult" nillable="true" type="q41:ArrayOfSGF_ProyeccionProduccion_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorFecha">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_ProyeccionProduccion_ObtenerPorFechaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="SGF_ProyeccionProduccion_ObtenerPorFechaResult" nillable="true" type="q42:ArrayOfSGF_ProyeccionProduccion_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seguridad_ObtenerUsuarioPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NombreUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Clave" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seguridad_ObtenerUsuarioPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Seguridad_ObtenerUsuarioPorIDResult" nillable="true" type="q43:SEG_Usuarios_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seguridad_ObtenerUsuarioTodos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seguridad_ObtenerUsuarioTodosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Seguridad_ObtenerUsuarioTodosResult" nillable="true" type="q44:ArrayOfSEG_Usuarios_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Menu_ObtenerTodosPor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="usuarioID" type="q45:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Menu_ObtenerTodosPorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Menu_ObtenerTodosPorResult" nillable="true" type="q46:ArrayOfSEG_Formularios_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Botones_ObtenerTodosPor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="usuarioID" type="q47:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Botones_ObtenerTodosPorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Botones_ObtenerTodosPorResult" nillable="true" type="q48:ArrayOfSEG_Botones_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seguridad_ParametrosPassword">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seguridad_ParametrosPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Seguridad_ParametrosPasswordResult" nillable="true" type="q49:ArrayOfSGF_ParametrosPassword" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Temporada_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="registro" nillable="true" type="q50:SGF_Temporada" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Temporada_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Temporada_Actualizar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="registro" nillable="true" type="q51:SGF_Temporada" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Temporada_ActualizarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Temporada_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="registro" nillable="true" type="q52:SGF_Temporada" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Temporada_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q53:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoClasificador_ObtenerPorIDResult" nillable="true" type="q54:SGF_TipoClasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_ObtenerPorUsername">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_ObtenerPorUsernameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoClasificador_ObtenerPorUsernameResult" nillable="true" type="q55:SGF_TipoClasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoClasificador_ObtenerPorNombreResult" nillable="true" type="q56:ArrayOfSGF_TipoClasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoClasificador_ObtenerTodoResult" nillable="true" type="q57:ArrayOfSGF_TipoClasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="tipoclasificador" nillable="true" type="q58:SGF_TipoClasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoClasificador_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoPersona_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q59:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoPersona_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoPersona_ObtenerPorIDResult" nillable="true" type="q60:SGF_TipoPersona" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoPersona_ObtenerPorUsername">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoPersona_ObtenerPorUsernameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoPersona_ObtenerPorUsernameResult" nillable="true" type="q61:SGF_TipoPersona" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoPersona_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoPersona_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoPersona_ObtenerTodoResult" nillable="true" type="q62:ArrayOfSGF_TipoPersona" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoPersona_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newpersona" nillable="true" type="q63:SGF_TipoPersona" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoPersona_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoUsuario_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q64:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoUsuario_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoUsuario_ObtenerPorIDResult" nillable="true" type="q65:SGF_TipoUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoUsuario_ObtenerPorUsername">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoUsuario_ObtenerPorUsernameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoUsuario_ObtenerPorUsernameResult" nillable="true" type="q66:ArrayOfSGF_TipoUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoUsuario_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoUsuario_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="TipoUsuario_ObtenerTodoResult" nillable="true" type="q67:ArrayOfSGF_TipoUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoUsuario_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newTipoUsuario" nillable="true" type="q68:SGF_TipoUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TipoUsuario_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q69:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Usuario_ObtenerPorIDResult" nillable="true" type="q70:SGF_Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ObtenerPorUsername">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ObtenerPorUsernameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Usuario_ObtenerPorUsernameResult" nillable="true" type="q71:SGF_Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Usuario_ObtenerTodoResult" nillable="true" type="q72:ArrayOfSGF_Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ObtenerPorTipoUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="TipoUsuario" type="q73:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ObtenerPorTipoUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Usuario_ObtenerPorTipoUsuarioResult" nillable="true" type="q74:ArrayOfSGF_Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newUsuario" nillable="true" type="q75:SGF_Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ActualizarPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="clvAnt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="clvAct" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mac" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="logueado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_ActualizarPasswordResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_BuscarUsuarioVTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="TipoUsuario" type="q76:guid" />
+        <xs:element minOccurs="0" name="identificacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_BuscarUsuarioVTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Usuario_BuscarUsuarioVTAResult" nillable="true" type="q77:ArrayOfSGF_Usuario_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_BuscarUsuarioPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="usuarioID" type="q78:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Usuario_BuscarUsuarioPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Usuario_BuscarUsuarioPorID_VTAResult" nillable="true" type="q79:SGF_Usuario_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q80:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_ObtenerPorIDResult" nillable="true" type="q81:SGF_Variedad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerPorCodName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerPorCodNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_ObtenerPorCodNameResult" nillable="true" type="q82:ArrayOfSGF_Variedad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerPorCodNameVTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerPorCodNameVTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_ObtenerPorCodNameVTAResult" nillable="true" type="q83:ArrayOfSGF_Variedad_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_ObtenerTodoResult" nillable="true" type="q84:ArrayOfSGF_Variedad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerTodoVTA">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerTodoVTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_ObtenerTodoVTAResult" nillable="true" type="q85:ArrayOfSGF_Variedad_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q86:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_ObtenerPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_ObtenerPorID_VTAResult" nillable="true" type="q87:SGF_Variedad_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="variedad" nillable="true" type="q88:SGF_Variedad" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TallosPorMallaGrabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="_newTalloXMalla" nillable="true" type="q89:SGF_VariedadTallosPorMalla" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TallosPorMallaGrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TalloPorMallaPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q90:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TalloPorMallaPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_TalloPorMallaPorIDResult" nillable="true" type="q91:SGF_VariedadTallosPorMalla" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TalloPorMallaPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q92:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TalloPorMallaPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_TalloPorMallaPorID_VTAResult" nillable="true" type="q93:SGF_VariedadTallosPorMalla_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TalloPorMallaPorIDs_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_variedadID" type="q94:guid" />
+        <xs:element xmlns:q95="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_talloXmalla" type="q95:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TalloPorMallaPorIDs_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_TalloPorMallaPorIDs_VTAResult" nillable="true" type="q96:SGF_VariedadTallosPorMalla_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TallosPorMallaPorVariedad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q97:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TallosPorMallaPorVariedadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_TallosPorMallaPorVariedadResult" nillable="true" type="q98:ArrayOfSGF_VariedadTallosPorMalla" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TallosPorMallaPorVariedad_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q99:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variedad_TallosPorMallaPorVariedad_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Variedad_TallosPorMallaPorVariedad_VTAResult" nillable="true" type="q100:ArrayOfSGF_VariedadTallosPorMalla_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Vendedor_ObtenerPorIDResult" nillable="true" type="q101:CO_VENDEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Vendedor_ObtenerTodoResult" nillable="true" type="q102:ArrayOfCO_VENDEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Vendedor_ObtenerPorNombreResult" nillable="true" type="q103:CO_VENDEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerPorNombres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerPorNombresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Vendedor_ObtenerPorNombresResult" nillable="true" type="q104:ArrayOfCO_VENDEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerPorEmpresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vendedorID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_ObtenerPorEmpresaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Vendedor_ObtenerPorEmpresaResult" nillable="true" type="q105:ArrayOfCO_VENDEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newvendedor" nillable="true" type="q106:CO_VENDEDOR" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vendedorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedor_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermisoFormulario_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newPermiso" nillable="true" type="q107:SGF_Permiso" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermisoFormulario_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q108:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="LineaAerea_ObtenerPorIDResult" nillable="true" type="q109:SGF_LineaAerea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="LineaAerea_ObtenerTodoResult" nillable="true" type="q110:ArrayOfSGF_LineaAerea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="LineaAerea_ObtenerPorNombreResult" nillable="true" type="q111:SGF_LineaAerea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_ObtenerPorEmpresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="linearea" type="q112:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_ObtenerPorEmpresaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="LineaAerea_ObtenerPorEmpresaResult" nillable="true" type="q113:ArrayOfSGF_LineaAerea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newlinearea" nillable="true" type="q114:SGF_LineaAerea" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="lineareaID" type="q115:guid" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineaAerea_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Activate">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q116:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivo_ObtenerPorIDResult" nillable="true" type="q117:SGF_CampoCultivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerPorIDTotal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q118:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerPorIDTotalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivo_ObtenerPorIDTotalResult" nillable="true" type="q119:SGF_CampoCultivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerPorIDs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_campoId" type="q120:guid" />
+        <xs:element xmlns:q121="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_areaId" type="q121:guid" />
+        <xs:element xmlns:q122="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_bloqueId" type="q122:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerPorIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivo_ObtenerPorIDsResult" nillable="true" type="q123:SGF_CampoCultivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivo_ObtenerTodoResult" nillable="true" type="q124:ArrayOfSGF_CampoCultivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerPorProveedorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_ObtenerPorProveedorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivo_ObtenerPorProveedorIDResult" nillable="true" type="q125:ArrayOfSGF_CampoCultivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q126:SGF_CampoCultivo" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_GrabarSecciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Tipo" type="xs:int" />
+        <xs:element xmlns:q127="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_campoID" type="q127:guid" />
+        <xs:element xmlns:q128="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_seccionId" type="q128:guid" />
+        <xs:element xmlns:q129="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_Id" type="q129:guid" />
+        <xs:element minOccurs="0" name="_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_orden" type="xs:int" />
+        <xs:element minOccurs="0" name="_aream2" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_nroPlantas" type="xs:int" />
+        <xs:element minOccurs="0" name="_usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fecha" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_estado" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_GrabarSeccionesResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_RecuperarTodo_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+        <xs:element xmlns:q130="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="itemID" type="q130:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_RecuperarTodo_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q131="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivo_RecuperarTodo_VTAResult" nillable="true" type="q131:ArrayOfSGF_CultivoCama_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_RecuperarTodoPasivo_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+        <xs:element xmlns:q132="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="itemID" type="q132:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivo_RecuperarTodoPasivo_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivo_RecuperarTodoPasivo_VTAResult" nillable="true" type="q133:ArrayOfSGF_CultivoCama_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_Actualizar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q134="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q134:SGF_CultivoArea" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ActualizarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ActualizarAreaID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q135:SGF_CultivoArea" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ActualizarAreaIDResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ContarAreaPorCampoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q136:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ContarAreaPorCampoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CultivoArea_ContarAreaPorCampoIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_Actualizar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q137="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q137:SGF_CultivoBloque" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ActualizarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ActualizarBloqueID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q138="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q138:SGF_CultivoBloque" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ActualizarBloqueIDResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ObtenerTodoPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q139:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ObtenerTodoPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoBloque_ObtenerTodoPorIDResult" nillable="true" type="q140:SGF_CultivoBloque" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ContarBloquePorCampoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q141:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ContarBloquePorCampoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CultivoBloque_ContarBloquePorCampoIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoLado_Actualizar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q142:SGF_CultivoLado" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoLado_ActualizarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoNave_Actualizar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q143="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q143:SGF_CultivoNave" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoNave_ActualizarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_Actualizar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q144:SGF_CultivoCama" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_ActualizarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_SembrarVariedad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q145:SGF_CultivoCama" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_SembrarVariedadResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_InjertarVariedad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q146:SGF_CultivoCama" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_InjertarVariedadResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_LimpiarVariedad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q147:SGF_CultivoCama" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_LimpiarVariedadResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_AsignarResponsable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q148="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q148:SGF_CultivoCama" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_AsignarResponsableResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_RedistribuirResponsable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q149:SGF_CultivoCama" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_RedistribuirResponsableResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_Actualizar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q150="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q150:SGF_CultivoCuadro" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_ActualizarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_ActualizarNombreColor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampo" nillable="true" type="q151:SGF_CultivoCuadro" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_ActualizarNombreColorResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_Recuperar_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q152="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="camaID" type="q152:guid" />
+        <xs:element xmlns:q153="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="cuadroID" type="q153:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_Recuperar_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q154="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoCuadro_Recuperar_VTAResult" nillable="true" type="q154:ArrayOfSGF_CultivoCuadro_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_RecuperarPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q155="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="cuadroID" type="q155:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_RecuperarPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoCuadro_RecuperarPorID_VTAResult" nillable="true" type="q156:SGF_CultivoCuadro_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q157="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="_actividades" nillable="true" type="q157:SGF_ActividadesMapaCultivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_ValidarSiembraCama">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tipo" type="xs:int" />
+        <xs:element xmlns:q158="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_cultivoCamaID" type="q158:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_ValidarSiembraCamaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MapaCultivoActividades_ValidarSiembraCamaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_RecuperarID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tipo" type="xs:int" />
+        <xs:element xmlns:q159="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_cultivoID" type="q159:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_RecuperarIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q160="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivoActividades_RecuperarIDResult" nillable="true" type="q160:ArrayOfSGF_ActividadesMapaCultivo_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_RecuperarPorTipoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tipo" type="xs:int" />
+        <xs:element xmlns:q161="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_ID" type="q161:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_RecuperarPorTipoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q162="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivoActividades_RecuperarPorTipoIDResult" nillable="true" type="q162:ArrayOfSP_ActividadesMapaCultivo_Buscar_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_RecuperarVariedadPorTipoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tipo" type="xs:int" />
+        <xs:element xmlns:q163="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_ID" type="q163:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_RecuperarVariedadPorTipoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q164="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivoActividades_RecuperarVariedadPorTipoIDResult" nillable="true" type="q164:ArrayOfSP_ActividadesMapaCultivo_BuscarVariedadCama_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_RecuperarResponsablePorTipoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tipo" type="xs:int" />
+        <xs:element xmlns:q165="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_ID" type="q165:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MapaCultivoActividades_RecuperarResponsablePorTipoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="MapaCultivoActividades_RecuperarResponsablePorTipoIDResult" nillable="true" type="q166:ArrayOfSP_ActividadesMapaCultivo_BuscarResponsablePorCama_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulo_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q167="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q167:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulo_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q168="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Modulo_ObtenerPorIDResult" nillable="true" type="q168:SGF_Modulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulol_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulol_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q169="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Modulol_ObtenerPorNombreResult" nillable="true" type="q169:ArrayOfSGF_Modulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulo_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulo_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Modulo_ObtenerTodoResult" nillable="true" type="q170:ArrayOfSGF_Modulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulo_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q171="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newModulo" nillable="true" type="q171:SGF_Modulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulo_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulo_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q172="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="moduloID" type="q172:guid" />
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Modulo_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Observaciones_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q173="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newItem" nillable="true" type="q173:SGF_Observaciones" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Observaciones_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q174="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Parametros_ObtenerTodoResult" nillable="true" type="q174:ArrayOfSGF_Parametro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q175="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q175:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q176="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Parametros_ObtenerPorIDResult" nillable="true" type="q176:SGF_Parametro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_ObtenerPorPkey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="empresaID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_ObtenerPorPkeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q177="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Parametros_ObtenerPorPkeyResult" nillable="true" type="q177:SGF_Parametro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q178="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="_newParametro" nillable="true" type="q178:SGF_Parametro" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q179="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="parametroID" type="q179:guid" />
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametros_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q180="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Persona_ObtenerPorIDResult" nillable="true" type="q180:SGF_Persona" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_ObtenerPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_ObtenerPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q181="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Persona_ObtenerPorID_VTAResult" nillable="true" type="q181:SGF_Persona_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q182="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Persona_ObtenerTodoResult" nillable="true" type="q182:ArrayOfSGF_Persona" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_ObtenerPorTipoPersona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q183="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="TipoPersona" type="q183:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_ObtenerPorTipoPersonaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q184="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Persona_ObtenerPorTipoPersonaResult" nillable="true" type="q184:ArrayOfSGF_Persona" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q185="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newPersona" nillable="true" type="q185:SGF_Persona" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_BuscarPersonaVTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q186="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="TipoPersona" type="q186:guid" />
+        <xs:element minOccurs="0" name="identificacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Persona_BuscarPersonaVTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q187="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Persona_BuscarPersonaVTAResult" nillable="true" type="q187:ArrayOfSGF_Persona_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q188="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Producto_ObtenerPorIDResult" nillable="true" type="q188:CO_ARTICULO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q189="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Producto_ObtenerTodoResult" nillable="true" type="q189:ArrayOfCO_ARTICULO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ObtenerPorVariedad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q190="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="variedadID" type="q190:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ObtenerPorVariedadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q191="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Producto_ObtenerPorVariedadResult" nillable="true" type="q191:ArrayOfCO_ARTICULO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ObtenerPorVariedadVTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q192="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="variedadID" type="q192:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ObtenerPorVariedadVTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q193="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Producto_ObtenerPorVariedadVTAResult" nillable="true" type="q193:ArrayOfSGF_Producto_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q194="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newProducto" nillable="true" type="q194:CO_ARTICULO" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ValidarProducto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q195="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newProducto" nillable="true" type="q195:CO_ARTICULO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Producto_ValidarProductoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Producto_ValidarProductoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q196="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newProveedor" nillable="true" type="q196:CO_PROVEEDOR" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q197="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proveedor_ObtenerPorIDResult" nillable="true" type="q197:CO_PROVEEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q198="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proveedor_ObtenerPorID_VTAResult" nillable="true" type="q198:SGF_Proveedor_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorRUC_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorRUC_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q199="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proveedor_ObtenerPorRUC_VTAResult" nillable="true" type="q199:SGF_Proveedor_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorIdentificacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="identificacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorIdentificacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q200="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proveedor_ObtenerPorIdentificacionResult" nillable="true" type="q200:CO_PROVEEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q201="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proveedor_ObtenerTodoResult" nillable="true" type="q201:ArrayOfCO_PROVEEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerTodo_VTA">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerTodo_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q202="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proveedor_ObtenerTodo_VTAResult" nillable="true" type="q202:ArrayOfSGF_Proveedor_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorTipoPersona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q203="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="TipoPersona" type="q203:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorTipoPersonaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q204="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proveedor_ObtenerPorTipoPersonaResult" nillable="true" type="q204:ArrayOfCO_PROVEEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorEmpresaID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmpresaID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorEmpresaIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q205="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proveedor_ObtenerPorEmpresaIDResult" nillable="true" type="q205:ArrayOfCO_PROVEEDOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorEmpresaID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmpresaID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ObtenerPorEmpresaID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q206="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Proveedor_ObtenerPorEmpresaID_VTAResult" nillable="true" type="q206:ArrayOfSGF_Proveedor_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ValidarCodigoPorEmpresaID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmpresaID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_ValidarCodigoPorEmpresaIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Proveedor_ValidarCodigoPorEmpresaIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Proveedor_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorBodega_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q207="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newProveedor" nillable="true" type="q207:SGF_ProveedorBodega" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorBodega_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorBodega_ObtenerPorEmpresaProveedor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorBodega_ObtenerPorEmpresaProveedorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q208="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorBodega_ObtenerPorEmpresaProveedorResult" nillable="true" type="q208:ArrayOfSGF_ProveedorBodega" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q209="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="registro" nillable="true" type="q209:SGF_ProveedorPrecio" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q210="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="registro" nillable="true" type="q210:SGF_ProveedorPrecio" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q211="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Id" type="q211:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q212="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorPrecio_ObtenerPorIDResult" nillable="true" type="q212:SGF_ProveedorPrecio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q213="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorPrecio_ObtenerTodoResult" nillable="true" type="q213:ArrayOfSGF_ProveedorPrecio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_ObtenerPorFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+        <xs:element xmlns:q214="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="variedad" type="q214:guid" />
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProveedorPrecio_ObtenerPorFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q215="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="ProveedorPrecio_ObtenerPorFiltroResult" nillable="true" type="q215:ArrayOfSGF_ProveedorPrecio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q216="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Almacen_ObtenerPorIDResult" nillable="true" type="q216:CO_ALMACEN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerPorEmpresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ruc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerPorEmpresaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q217="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Almacen_ObtenerPorEmpresaResult" nillable="true" type="q217:ArrayOfCO_ALMACEN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q218="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Almacen_ObtenerPorNombreResult" nillable="true" type="q218:CO_ALMACEN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerPorContenerNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerPorContenerNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q219="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Almacen_ObtenerPorContenerNombreResult" nillable="true" type="q219:ArrayOfCO_ALMACEN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q220="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Almacen_ObtenerTodoResult" nillable="true" type="q220:ArrayOfCO_ALMACEN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q221="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newalmacen" nillable="true" type="q221:CO_ALMACEN" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" type="xs:int" />
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Auditoria_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q222="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="registro" nillable="true" type="q222:SGF_Auditoria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Auditoria_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q223="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerPorIDResult" nillable="true" type="q223:CO_BODEGA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q224="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerPorNombreResult" nillable="true" type="q224:CO_BODEGA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorNombres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorNombresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q225="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerPorNombresResult" nillable="true" type="q225:ArrayOfCO_BODEGA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorAlmacen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="almacen" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorAlmacenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q226="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerPorAlmacenResult" nillable="true" type="q226:ArrayOfSGF_Bodega_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorAlmacenEmpresa_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="almacen" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorAlmacenEmpresa_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q227="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerPorAlmacenEmpresa_VTAResult" nillable="true" type="q227:ArrayOfSGF_Bodega_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorAlmacenEmpresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="almacen" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorAlmacenEmpresaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q228="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerPorAlmacenEmpresaResult" nillable="true" type="q228:ArrayOfCO_BODEGA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorEmpresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorEmpresaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q229="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerPorEmpresaResult" nillable="true" type="q229:ArrayOfCO_BODEGA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorEmpresa_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="empresa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerPorEmpresa_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q230="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerPorEmpresa_VTAResult" nillable="true" type="q230:ArrayOfSGF_Bodega_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q231="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerTodoResult" nillable="true" type="q231:ArrayOfCO_BODEGA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerTodo_VTA">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_ObtenerTodo_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q232="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Bodega_ObtenerTodo_VTAResult" nillable="true" type="q232:ArrayOfSGF_Bodega_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q233="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newbodega" nillable="true" type="q233:CO_BODEGA" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bodegaID" type="xs:int" />
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Bodega_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q234="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q234:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q235="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Boton_ObtenerPorIDResult" nillable="true" type="q235:SGF_Boton" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q236="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Boton_ObtenerPorNombreResult" nillable="true" type="q236:SGF_Boton" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q237="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Boton_ObtenerTodoResult" nillable="true" type="q237:ArrayOfSGF_Boton" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerPorFormularioID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q238="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="formularioID" type="q238:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerPorFormularioIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q239="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Boton_ObtenerPorFormularioIDResult" nillable="true" type="q239:ArrayOfSGF_Boton" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerPorUsuarioID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q240="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="usuarioID" type="q240:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_ObtenerPorUsuarioID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q241="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Boton_ObtenerPorUsuarioID_VTAResult" nillable="true" type="q241:ArrayOfSEG_Botones_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q242="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newBoton" nillable="true" type="q242:SGF_Boton" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Boton_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermisoBoton_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q243="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newBoton" nillable="true" type="q243:SGF_PermisoBoton" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermisoBoton_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CampoCultivo_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q244="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampoCultivo" nillable="true" type="q244:SGF_CampoCultivo" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CampoCultivo_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CampoCultivo_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q245="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q245:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CampoCultivo_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q246="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CampoCultivo_ObtenerPorIDResult" nillable="true" type="q246:SGF_CampoCultivo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q247="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampoCultivo" nillable="true" type="q247:SGF_CultivoArea" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q248="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q248:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q249="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoArea_ObtenerPorIDResult" nillable="true" type="q249:SGF_CultivoArea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ObtenerPorCampoCultivoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q250="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q250:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ObtenerPorCampoCultivoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q251="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoArea_ObtenerPorCampoCultivoIDResult" nillable="true" type="q251:ArrayOfSGF_CultivoArea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ObtenerPorCampoCultivoAreaIDs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q252="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CampoCultivoID" type="q252:guid" />
+        <xs:element xmlns:q253="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="AreaId" type="q253:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoArea_ObtenerPorCampoCultivoAreaIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q254="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoArea_ObtenerPorCampoCultivoAreaIDsResult" nillable="true" type="q254:ArrayOfSGF_CultivoArea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q255="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampoCultivo" nillable="true" type="q255:SGF_CultivoBloque" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q256="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q256:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q257="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoBloque_ObtenerPorIDResult" nillable="true" type="q257:SGF_CultivoBloque" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ObtenerPorAreaID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q258="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q258:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ObtenerPorAreaIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q259="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoBloque_ObtenerPorAreaIDResult" nillable="true" type="q259:ArrayOfSGF_CultivoBloque" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ObtenerPorAreaBloqueIDs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q260="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CultivoAreaId" type="q260:guid" />
+        <xs:element xmlns:q261="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="BloqueID" type="q261:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoBloque_ObtenerPorAreaBloqueIDsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q262="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoBloque_ObtenerPorAreaBloqueIDsResult" nillable="true" type="q262:ArrayOfSGF_CultivoBloque" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoLado_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q263="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampoCultivo" nillable="true" type="q263:SGF_CultivoLado" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoLado_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoLado_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q264="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q264:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoLado_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q265="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoLado_ObtenerPorIDResult" nillable="true" type="q265:SGF_CultivoLado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoLado_ObtenerPorBloqueID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q266="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q266:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoLado_ObtenerPorBloqueIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q267="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoLado_ObtenerPorBloqueIDResult" nillable="true" type="q267:ArrayOfSGF_CultivoLado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoNave_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q268="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampoCultivo" nillable="true" type="q268:SGF_CultivoNave" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoNave_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoNave_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q269="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q269:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoNave_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q270="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoNave_ObtenerPorIDResult" nillable="true" type="q270:SGF_CultivoNave" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoNave_ObtenerPorLadoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q271="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q271:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoNave_ObtenerPorLadoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q272="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoNave_ObtenerPorLadoIDResult" nillable="true" type="q272:ArrayOfSGF_CultivoNave" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q273="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampoCultivo" nillable="true" type="q273:SGF_CultivoCama" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q274="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q274:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q275="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoCama_ObtenerPorIDResult" nillable="true" type="q275:SGF_CultivoCama" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_ObtenerPorNaveID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q276="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q276:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCama_ObtenerPorNaveIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q277="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoCama_ObtenerPorNaveIDResult" nillable="true" type="q277:ArrayOfSGF_CultivoCama" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q278="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newCampoCultivo" nillable="true" type="q278:SGF_CultivoCuadro" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q279="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q279:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q280="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoCuadro_ObtenerPorIDResult" nillable="true" type="q280:SGF_CultivoCuadro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_ObtenerPorCamaID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q281="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q281:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CultivoCuadro_ObtenerPorCamaIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q282="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="CultivoCuadro_ObtenerPorCamaIDResult" nillable="true" type="q282:ArrayOfSGF_CultivoCuadro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q283="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q283:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q284="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Clasificador_ObtenerPorIDResult" nillable="true" type="q284:SGF_Clasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorUsername">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorUsernameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q285="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Clasificador_ObtenerPorUsernameResult" nillable="true" type="q285:ArrayOfSGF_Clasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q286="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Clasificador_ObtenerTodoResult" nillable="true" type="q286:ArrayOfSGF_Clasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorTipoClasificador">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q287="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="TipoClasificador" type="q287:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorTipoClasificadorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q288="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Clasificador_ObtenerPorTipoClasificadorResult" nillable="true" type="q288:ArrayOfSGF_Clasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q289="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newclasificador" nillable="true" type="q289:SGF_Clasificador" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q290="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clasificadorID" type="q290:guid" />
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_Activar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q291="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clasificadorID" type="q291:guid" />
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ActivarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q292="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q292:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q293="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Clasificador_ObtenerPorID_VTAResult" nillable="true" type="q293:SGF_Clasificador_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorUsername_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerPorUsername_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q294="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Clasificador_ObtenerPorUsername_VTAResult" nillable="true" type="q294:ArrayOfSGF_Clasificador_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerTodo_VTA">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_ObtenerTodo_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q295="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Clasificador_ObtenerTodo_VTAResult" nillable="true" type="q295:ArrayOfSGF_Clasificador_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_Buscar_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element xmlns:q296="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="tipoClasificadorID" type="q296:guid" />
+        <xs:element xmlns:q297="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="parentID" type="q297:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clasificador_Buscar_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q298="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Clasificador_Buscar_VTAResult" nillable="true" type="q298:ArrayOfSGF_Clasificador_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q299="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q299:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q300="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="DAES_ObtenerPorIDResult" nillable="true" type="q300:SGF_DAES" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q301="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q301:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q302="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="DAES_ObtenerPorID_VTAResult" nillable="true" type="q302:SGF_DAES_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q303="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="DAES_ObtenerTodoResult" nillable="true" type="q303:ArrayOfSGF_DAES" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerTodo_VTA">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerTodo_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q304="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="DAES_ObtenerTodo_VTAResult" nillable="true" type="q304:ArrayOfSGF_DAES_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q305="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="DAES_ObtenerPorNombreResult" nillable="true" type="q305:SGF_DAES" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorAduana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q306="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Aduana" type="q306:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorAduanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q307="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="DAES_ObtenerPorAduanaResult" nillable="true" type="q307:ArrayOfSGF_DAES" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorAduana_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q308="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="Aduana" type="q308:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorAduana_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q309="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="DAES_ObtenerPorAduana_VTAResult" nillable="true" type="q309:ArrayOfSGF_DAES_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorPais_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q310="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pais" type="q310:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_ObtenerPorPais_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q311="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="DAES_ObtenerPorPais_VTAResult" nillable="true" type="q311:ArrayOfSGF_DAES_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_DAES_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q312="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newDaes" nillable="true" type="q312:SGF_DAES" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SGF_DAES_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q313="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="daesID" type="q313:guid" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAES_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerGrupoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idGrupo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerGrupoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q314="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Empresa_ObtenerGrupoIDResult" nillable="true" type="q314:ArrayOfCO_EMPRESA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q315="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Empresa_ObtenerPorNombreResult" nillable="true" type="q315:CO_EMPRESA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerPorContenerNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerPorContenerNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q316="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Empresa_ObtenerPorContenerNombreResult" nillable="true" type="q316:ArrayOfCO_EMPRESA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerPorRUC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ruc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerPorRUCResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q317="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Empresa_ObtenerPorRUCResult" nillable="true" type="q317:CO_EMPRESA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q318="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Empresa_ObtenerTodoResult" nillable="true" type="q318:ArrayOfCO_EMPRESA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q319="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newempresa" nillable="true" type="q319:CO_EMPRESA" />
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nomPC" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nompc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_user" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Empresa_EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q320="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q320:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q321="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Formulario_ObtenerPorIDResult" nillable="true" type="q321:SGF_Formulario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q322="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Formulario_ObtenerPorNombreResult" nillable="true" type="q322:SGF_Formulario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerTodo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerTodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q323="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Formulario_ObtenerTodoResult" nillable="true" type="q323:ArrayOfSGF_Formulario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorModuloID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q324="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="moduloID" type="q324:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorModuloIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q325="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Formulario_ObtenerPorModuloIDResult" nillable="true" type="q325:ArrayOfSGF_Formulario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorNombre_ModuloID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q326="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="moduloID" type="q326:guid" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorNombre_ModuloID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q327="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Formulario_ObtenerPorNombre_ModuloID_VTAResult" nillable="true" type="q327:ArrayOfSGF_Formulario_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_Grabar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q328="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="newFormulario" nillable="true" type="q328:SGF_Formulario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_GrabarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorUsuarioID_VTA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q329="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="usuarioID" type="q329:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Formulario_ObtenerPorUsuarioID_VTAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q330="http://schemas.datacontract.org/2004/07/SGF.DataAccess" minOccurs="0" name="Formulario_ObtenerPorUsuarioID_VTAResult" nillable="true" type="q330:ArrayOfSEG_Formularios_VTA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermisoFormulario_LimpiarEstado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q331="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="usuarioID" type="q331:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermisoFormulario_LimpiarEstadoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

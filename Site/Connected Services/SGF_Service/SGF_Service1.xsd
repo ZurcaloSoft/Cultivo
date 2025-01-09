@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SGF.BussinessLogic.Common" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SGF.BussinessLogic.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57843/SGF_Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="InfraestructureException">
+    <xs:sequence>
+      <xs:element name="_x003C_ID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Message_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SupportCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InfraestructureException" nillable="true" type="tns:InfraestructureException" />
+  <xs:complexType name="LogicException">
+    <xs:sequence>
+      <xs:element name="_x003C_Code_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Message_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LogicException" nillable="true" type="tns:LogicException" />
+  <xs:complexType name="SecurityException">
+    <xs:sequence>
+      <xs:element name="_x003C_Action_x003E_k__BackingField" type="tns:SecurityActions" />
+      <xs:element name="_x003C_ID_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Message_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SecurityException" nillable="true" type="tns:SecurityException" />
+  <xs:simpleType name="SecurityActions">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Message">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CloseSession">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SecurityActions" nillable="true" type="tns:SecurityActions" />
+</xs:schema>

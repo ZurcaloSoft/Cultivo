@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\f-lovato\Desktop\Publicar\Zurcalo\Sitio</_PublishTargetUrl>
+    <History>True|2025-01-09T14:22:47.4837522Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Administracion/Frm_Almacen.aspx">
+      <publishTime>11/14/2024 09:33:02</publishTime>
+    </File>
+    <File Include="Administracion/Frm_Bodega.aspx">
+      <publishTime>11/14/2024 12:35:18</publishTime>
+    </File>
+    <File Include="Administracion/Frm_Botones.aspx">
+      <publishTime>05/24/2024 09:55:52</publishTime>
+    </File>
+    <File Include="Administracion/Frm_BuscarPersona.aspx">
+      <publishTime>06/26/2024 22:25:54</publishTime>
+    </File>
+    <File Include="Administracion/Frm_Clasificador.aspx">
+      <publishTime>08/15/2024 08:28:36</publishTime>
+    </File>
+    <File Include="Administracion/Frm_Empresa.aspx">
+      <publishTime>11/14/2024 12:26:18</publishTime>
+    </File>
+    <File Include="Administracion/Frm_Formulario.aspx">
+      <publishTime>08/15/2024 08:28:18</publishTime>
+    </File>
+    <File Include="Administracion/Frm_Modulo.aspx">
+      <publishTime>08/15/2024 08:27:20</publishTime>
+    </File>
+    <File Include="Administracion/Frm_Parametros.aspx">
+      <publishTime>09/24/2024 12:41:32</publishTime>
+    </File>
+    <File Include="Administracion/Frm_Sucursal.aspx">
+      <publishTime>08/15/2024 21:48:14</publishTime>
+    </File>
+    <File Include="Administracion/Frm_TipoClasificador.aspx">
+      <publishTime>08/15/2024 08:28:50</publishTime>
+    </File>
+    <File Include="Administracion/Frm_TipoUsuario.aspx">
+      <publishTime>05/30/2024 14:53:04</publishTime>
+    </File>
+    <File Include="Administracion/Frm_Usuario.aspx">
+      <publishTime>11/26/2024 00:03:56</publishTime>
+    </File>
+    <File Include="bin/BCrypt.Net.dll">
+      <publishTime>12/27/2023 11:54:10</publishTime>
+    </File>
+    <File Include="bin/EncryptText.dll">
+      <publishTime>06/07/2023 11:40:48</publishTime>
+    </File>
+    <File Include="bin/EncryptText.pdb">
+      <publishTime>11/06/2019 07:48:30</publishTime>
+    </File>
+    <File Include="bin/EnvDTE.dll">
+      <publishTime>07/26/2012 19:08:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AnalysisServices.AdomdClient.dll">
+      <publishTime>01/17/2023 14:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/14/2016 01:06:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/SGF.Site.dll">
+      <publishTime>01/09/2025 09:22:46</publishTime>
+    </File>
+    <File Include="bin/SGF.Site.pdb">
+      <publishTime>01/09/2025 09:22:46</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>07/26/2012 19:08:06</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Design.dll">
+      <publishTime>01/16/2023 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Device.Detection.dll">
+      <publishTime>01/16/2023 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Spreadsheet.dll">
+      <publishTime>01/09/2023 18:04:48</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>01/16/2023 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>01/16/2023 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Core.dll">
+      <publishTime>01/04/2023 13:32:58</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.DrawingML.dll">
+      <publishTime>01/04/2023 13:33:00</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Flow.dll">
+      <publishTime>01/04/2023 13:33:04</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.dll">
+      <publishTime>01/04/2023 13:33:12</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll">
+      <publishTime>01/04/2023 13:33:14</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Zip.dll">
+      <publishTime>01/04/2023 13:32:56</publishTime>
+    </File>
+    <File Include="Comercial/Frm_Cliente.aspx">
+      <publishTime>07/06/2024 23:52:04</publishTime>
+    </File>
+    <File Include="Comercial/Frm_Daes.aspx">
+      <publishTime>01/04/2025 00:35:26</publishTime>
+    </File>
+    <File Include="Comercial/Frm_Factura.aspx">
+      <publishTime>06/07/2024 15:56:18</publishTime>
+    </File>
+    <File Include="Comercial/Frm_LineasAereas.aspx">
+      <publishTime>01/02/2025 23:55:18</publishTime>
+    </File>
+    <File Include="Comercial/Frm_OrdenFija.aspx">
+      <publishTime>06/07/2024 15:55:28</publishTime>
+    </File>
+    <File Include="Comercial/Frm_Vendedor.aspx">
+      <publishTime>01/04/2025 16:42:24</publishTime>
+    </File>
+    <File Include="Comercial/Frm_VentaExportacion.aspx">
+      <publishTime>06/07/2024 15:55:46</publishTime>
+    </File>
+    <File Include="Comercial/Frm_VentaNacional.aspx">
+      <publishTime>06/07/2024 15:56:04</publishTime>
+    </File>
+    <File Include="Compras/Frm_Proveedor.aspx">
+      <publishTime>11/24/2024 00:17:52</publishTime>
+    </File>
+    <File Include="Compras/Frm_ProveedorBodega.aspx">
+      <publishTime>11/19/2024 01:33:42</publishTime>
+    </File>
+    <File Include="Compras/Frm_ProveedorPrecio.aspx">
+      <publishTime>10/28/2024 21:34:52</publishTime>
+    </File>
+    <File Include="Compras/Frm_ProveedorVariedad.aspx">
+      <publishTime>11/16/2024 12:06:52</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.CO_ALMACEN.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.CO_ARTICULO.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.CO_BODEGA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.CO_EMPRESA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.CO_PROVEEDOR.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.CO_VENDEDOR.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SEG_Botones_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SEG_Formularios_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SEG_Usuarios_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_ActividadesMapaCultivo_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Bodega_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Boton.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_CampoCultivo.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Clasificador.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Clasificador_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_CultivoArea.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_CultivoBloque.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_CultivoCama.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_CultivoCama_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_CultivoCuadro.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_CultivoCuadro_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_CultivoLado.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_CultivoNave.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_DAES.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_DAES_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Formulario.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Formulario_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_LineaAerea.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Modulo.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Parametro.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_ParametrosPassword.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Persona.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Persona_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Producto_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_ProveedorBodega.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_ProveedorPrecio.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_ProveedorPrecio_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_ProveedorVariedad.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_ProveedorVariedad_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Proveedor_VTA.datasource">
+      <publishTime>01/04/2025 13:44:11</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Proyeccion.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_ProyeccionProduccion.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_ProyeccionProduccion_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Proyeccion_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_TipoClasificador.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_TipoPersona.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_TipoUsuario.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Usuario.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Usuario_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Variedad.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_VariedadTallosPorMalla.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_VariedadTallosPorMalla_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SGF_Variedad_VTA.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SP_ActividadesMapaCultivo_BuscarResponsablePorCama_Result.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SP_ActividadesMapaCultivo_BuscarVariedadCama_Result.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Connected Services/SGF_Service/SGF.Site.SGF_Service.SP_ActividadesMapaCultivo_Buscar_Result.datasource">
+      <publishTime>01/04/2025 13:44:10</publishTime>
+    </File>
+    <File Include="Controles/Control_Multiple.ascx">
+      <publishTime>05/27/2024 21:26:42</publishTime>
+    </File>
+    <File Include="Cultivo/Frm_ActividadesMapaCultivo.aspx">
+      <publishTime>01/02/2025 16:59:23</publishTime>
+    </File>
+    <File Include="Cultivo/Frm_Bloques.aspx">
+      <publishTime>12/10/2024 20:13:48</publishTime>
+    </File>
+    <File Include="Cultivo/Frm_BuscarProveedor.aspx">
+      <publishTime>06/26/2024 22:36:46</publishTime>
+    </File>
+    <File Include="Cultivo/Frm_EnvioDeFlor.aspx">
+      <publishTime>12/12/2024 18:48:40</publishTime>
+    </File>
+    <File Include="Cultivo/Frm_ProyeccionProduccion.aspx">
+      <publishTime>12/12/2024 18:48:40</publishTime>
+    </File>
+    <File Include="Cultivo/Frm_Temporada.aspx">
+      <publishTime>09/20/2024 20:29:26</publishTime>
+    </File>
+    <File Include="Cultivo/Frm_Variedades.aspx">
+      <publishTime>12/31/2024 01:48:59</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>01/07/2025 02:22:13</publishTime>
+    </File>
+    <File Include="Empaque/Frm_BajasFlor.aspx">
+      <publishTime>06/07/2024 15:53:24</publishTime>
+    </File>
+    <File Include="Empaque/Frm_CargaDisponibilidad.aspx">
+      <publishTime>06/07/2024 15:53:02</publishTime>
+    </File>
+    <File Include="Empaque/Frm_EmpaquePiezas.aspx">
+      <publishTime>06/07/2024 15:53:58</publishTime>
+    </File>
+    <File Include="Images/Actualizar.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/Add.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/addItem.png">
+      <publishTime>07/18/2018 12:19:54</publishTime>
+    </File>
+    <File Include="Images/admin.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/Agregar.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/Agregar2.png">
+      <publishTime>05/14/2022 12:24:28</publishTime>
+    </File>
+    <File Include="Images/AgregarDetalle.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/aprobar.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/Ayuda.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/back2.png">
+      <publishTime>05/14/2022 12:24:30</publishTime>
+    </File>
+    <File Include="Images/Banner-Floricultura.jpg">
+      <publishTime>04/17/2024 09:25:14</publishTime>
+    </File>
+    <File Include="Images/Banner-Floricultura.png">
+      <publishTime>12/10/2024 20:41:54</publishTime>
+    </File>
+    <File Include="Images/Borrar.png">
+      <publishTime>10/20/2022 09:32:46</publishTime>
+    </File>
+    <File Include="Images/botonBuscar.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/botonComercial.png">
+      <publishTime>05/16/2024 14:11:24</publishTime>
+    </File>
+    <File Include="Images/botonCultivo.png">
+      <publishTime>05/16/2024 13:45:38</publishTime>
+    </File>
+    <File Include="Images/botonEmpaque.png">
+      <publishTime>05/16/2024 14:01:56</publishTime>
+    </File>
+    <File Include="Images/botonPoscosecha.png">
+      <publishTime>05/16/2024 13:55:54</publishTime>
+    </File>
+    <File Include="Images/botonRecepcion.png">
+      <publishTime>05/16/2024 14:16:28</publishTime>
+    </File>
+    <File Include="Images/botonTH.png">
+      <publishTime>05/16/2024 14:30:26</publishTime>
+    </File>
+    <File Include="Images/botonVacio.png">
+      <publishTime>06/24/2022 15:40:00</publishTime>
+    </File>
+    <File Include="Images/btncartera.png">
+      <publishTime>06/24/2022 15:40:02</publishTime>
+    </File>
+    <File Include="Images/Buscar.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/BuscarModal.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/campo.png">
+      <publishTime>08/20/2024 11:21:06</publishTime>
+    </File>
+    <File Include="Images/cargandoMensaje.gif">
+      <publishTime>05/14/2022 12:24:30</publishTime>
+    </File>
+    <File Include="Images/carretilla.png">
+      <publishTime>01/02/2025 14:16:08</publishTime>
+    </File>
+    <File Include="Images/CerrarSesion.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/clean.png">
+      <publishTime>05/14/2022 12:24:30</publishTime>
+    </File>
+    <File Include="Images/Complete.png">
+      <publishTime>05/14/2022 13:00:02</publishTime>
+    </File>
+    <File Include="Images/construccion.png">
+      <publishTime>08/20/2024 11:15:48</publishTime>
+    </File>
+    <File Include="Images/convenio.png">
+      <publishTime>05/14/2022 12:24:30</publishTime>
+    </File>
+    <File Include="Images/copy.png">
+      <publishTime>05/14/2022 12:24:30</publishTime>
+    </File>
+    <File Include="Images/Cotizar.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/declaracion.png">
+      <publishTime>05/14/2022 12:24:30</publishTime>
+    </File>
+    <File Include="Images/Delete.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/dot_clear.gif">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/download.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/edit.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/encontrar.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/Entregar.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/excel.png">
+      <publishTime>05/14/2022 12:24:30</publishTime>
+    </File>
+    <File Include="Images/Exit_s1.jpg">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/Exit_s2.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/garden.png">
+      <publishTime>07/27/2024 11:29:36</publishTime>
+    </File>
+    <File Include="Images/Grabar.png">
+      <publishTime>05/14/2022 12:32:42</publishTime>
+    </File>
+    <File Include="Images/Grabar1.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/Ingresar.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/Ingresar2.png">
+      <publishTime>05/14/2022 12:24:32</publishTime>
+    </File>
+    <File Include="Images/injerto.png">
+      <publishTime>07/27/2024 11:36:50</publishTime>
+    </File>
+    <File Include="Images/Invernadero.JPG">
+      <publishTime>04/25/2024 12:12:50</publishTime>
+    </File>
+    <File Include="Images/invernadero.png">
+      <publishTime>08/20/2024 11:28:54</publishTime>
+    </File>
+    <File Include="Images/liquidar.png">
+      <publishTime>05/14/2022 13:00:02</publishTime>
+    </File>
+    <File Include="Images/lista.png">
+      <publishTime>05/14/2022 12:24:32</publishTime>
+    </File>
+    <File Include="Images/loadinfo.net.gif">
+      <publishTime>05/14/2022 12:24:32</publishTime>
+    </File>
+    <File Include="Images/localizar.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/MasterPage_Blanco.jpg">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/MasterPage_Inicio.jpg">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/mostrar.png">
+      <publishTime>05/14/2022 13:00:04</publishTime>
+    </File>
+    <File Include="Images/NoTengo.png">
+      <publishTime>05/14/2022 12:24:34</publishTime>
+    </File>
+    <File Include="Images/notificacion.png">
+      <publishTime>05/14/2022 12:24:34</publishTime>
+    </File>
+    <File Include="Images/Nuevo.png">
+      <publishTime>05/14/2022 13:00:04</publishTime>
+    </File>
+    <File Include="Images/nuevo2-icono.png">
+      <publishTime>05/14/2022 12:24:34</publishTime>
+    </File>
+    <File Include="Images/Ok.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/Pagar.png">
+      <publishTime>05/14/2022 13:00:04</publishTime>
+    </File>
+    <File Include="Images/Plant.gif">
+      <publishTime>12/07/2024 10:51:22</publishTime>
+    </File>
+    <File Include="Images/posesion.png">
+      <publishTime>05/14/2022 12:24:34</publishTime>
+    </File>
+    <File Include="Images/Predio.JPG">
+      <publishTime>04/25/2024 15:39:34</publishTime>
+    </File>
+    <File Include="Images/prev.png">
+      <publishTime>04/13/2022 08:58:40</publishTime>
+    </File>
+    <File Include="Images/print.png">
+      <publishTime>05/14/2022 13:00:04</publishTime>
+    </File>
+    <File Include="Images/ReCargar.png">
+      <publishTime>05/14/2022 13:00:04</publishTime>
+    </File>
+    <File Include="Images/rechazar.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/Recuperar.gif">
+      <publishTime>05/14/2022 12:24:34</publishTime>
+    </File>
+    <File Include="Images/Regresar.png">
+      <publishTime>10/20/2022 09:32:52</publishTime>
+    </File>
+    <File Include="Images/regresar2.png">
+      <publishTime>05/14/2022 13:00:04</publishTime>
+    </File>
+    <File Include="Images/reinspeccion.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/removerTierra.png">
+      <publishTime>08/20/2024 11:15:06</publishTime>
+    </File>
+    <File Include="Images/Renovacion.png">
+      <publishTime>05/14/2022 13:00:04</publishTime>
+    </File>
+    <File Include="Images/RePrint.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/restart.png">
+      <publishTime>05/14/2022 12:24:34</publishTime>
+    </File>
+    <File Include="Images/Revisar1.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/Revisar2.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/Salir.png">
+      <publishTime>05/14/2022 13:00:04</publishTime>
+    </File>
+    <File Include="Images/save.png">
+      <publishTime>11/06/2024 23:34:40</publishTime>
+    </File>
+    <File Include="Images/Sembrar.png">
+      <publishTime>07/27/2024 11:09:10</publishTime>
+    </File>
+    <File Include="Images/Sembrar1.png">
+      <publishTime>07/27/2024 11:21:06</publishTime>
+    </File>
+    <File Include="Images/Sembrar2.png">
+      <publishTime>07/27/2024 11:21:44</publishTime>
+    </File>
+    <File Include="Images/spacer.gif">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/Spinner.gif">
+      <publishTime>12/07/2024 10:52:02</publishTime>
+    </File>
+    <File Include="Images/Start.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/TabularData.png">
+      <publishTime>05/14/2022 13:00:04</publishTime>
+    </File>
+    <File Include="Images/tractor.png">
+      <publishTime>08/20/2024 11:44:24</publishTime>
+    </File>
+    <File Include="Images/verificar.png">
+      <publishTime>05/14/2022 12:32:44</publishTime>
+    </File>
+    <File Include="Images/working.jpg">
+      <publishTime>12/10/2024 20:42:19</publishTime>
+    </File>
+    <File Include="Images/Zonificacion.JPG">
+      <publishTime>04/25/2024 15:39:58</publishTime>
+    </File>
+    <File Include="JavaScript/sweetalert.min.js">
+      <publishTime>06/04/2024 07:41:24</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>04/28/2024 20:08:44</publishTime>
+    </File>
+    <File Include="Poscosecha/Frm_ClasificacionDeFlor.aspx">
+      <publishTime>05/30/2024 15:24:52</publishTime>
+    </File>
+    <File Include="Poscosecha/Frm_DistribucionMalla.aspx">
+      <publishTime>05/30/2024 15:26:24</publishTime>
+    </File>
+    <File Include="Poscosecha/Frm_EtiquetadoFlorExportacion.aspx">
+      <publishTime>05/30/2024 15:25:48</publishTime>
+    </File>
+    <File Include="Poscosecha/Frm_RecepcionFlor.aspx">
+      <publishTime>12/12/2024 19:45:01</publishTime>
+    </File>
+    <File Include="Seguridad/Frm_CambiarPassword.aspx">
+      <publishTime>05/31/2024 21:22:12</publishTime>
+    </File>
+    <File Include="Seguridad/Frm_ParametroPassword.aspx">
+      <publishTime>05/24/2024 09:56:26</publishTime>
+    </File>
+    <File Include="SGF_Site.Master">
+      <publishTime>01/07/2025 02:15:09</publishTime>
+    </File>
+    <File Include="SGF_Site_Gen.Master">
+      <publishTime>12/12/2024 21:09:21</publishTime>
+    </File>
+    <File Include="Styles/style.css">
+      <publishTime>12/10/2024 21:11:01</publishTime>
+    </File>
+    <File Include="TalentoHumano/Frm_Persona.aspx">
+      <publishTime>01/02/2025 21:57:10</publishTime>
+    </File>
+    <File Include="TalentoHumano/Frm_TipoPersona.aspx">
+      <publishTime>09/25/2024 11:30:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/09/2025 09:22:46</publishTime>
+    </File>
+    <File Include="_Blank.aspx">
+      <publishTime>05/23/2024 20:19:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
