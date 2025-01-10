@@ -1,0 +1,119 @@
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\bin\SGF.Service_Publisher.dll.config
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\bin\SGF.Service_Publisher.dll
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\bin\SGF.Service_Publisher.pdb
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\bin\SGF.BussinessLogic.dll
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\bin\SGF.DataAccess.dll
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\bin\SGF.DataAccess.pdb
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\bin\SGF.DataAccess.dll.config
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\bin\SGF.BussinessLogic.pdb
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\obj\Debug\Service_Publisher.csproj.AssemblyReference.cache
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\obj\Debug\Service_Publisher.csproj.CoreCompileInputs.cache
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\obj\Debug\Service_.7BDD48D5.Up2Date
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\obj\Debug\SGF.Service_Publisher.dll
+D:\Fabian\PROYECTOS\SGF_2019\Service_Publisher\obj\Debug\SGF.Service_Publisher.pdb
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll.config
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\SGF.Service_Publisher.pdb
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\SGF.BussinessLogic.dll
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\SGF.DataAccess.dll
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\SGF.DataAccess.pdb
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\SGF.DataAccess.dll.config
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\SGF.BussinessLogic.pdb
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.AssemblyReference.cache
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.CoreCompileInputs.cache
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.dll
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.pdb
+D:\Floricola\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll.config
+D:\Floricola\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll
+D:\Floricola\SGF\Service_Publisher\bin\SGF.Service_Publisher.pdb
+D:\Floricola\SGF\Service_Publisher\bin\SGF.BussinessLogic.dll
+D:\Floricola\SGF\Service_Publisher\bin\SGF.DataAccess.dll
+D:\Floricola\SGF\Service_Publisher\bin\SGF.DataAccess.pdb
+D:\Floricola\SGF\Service_Publisher\bin\SGF.DataAccess.dll.config
+D:\Floricola\SGF\Service_Publisher\bin\SGF.BussinessLogic.pdb
+D:\Floricola\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.AssemblyReference.cache
+D:\Floricola\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.CoreCompileInputs.cache
+D:\Floricola\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.CopyComplete
+D:\Floricola\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.dll
+D:\Floricola\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.pdb
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\EncryptText.dll
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\BCrypt.Net.dll
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\EncryptText.pdb
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\obj\Debug\Service_.7BDD48D5.Up2Date
+D:\Floricola\SGF\Service_Publisher\bin\EncryptText.dll
+D:\Floricola\SGF\Service_Publisher\bin\BCrypt.Net.dll
+D:\Floricola\SGF\Service_Publisher\bin\EncryptText.pdb
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll.config
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.Service_Publisher.pdb
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.BussinessLogic.dll
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.DataAccess.dll
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\Newtonsoft.Json.dll
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\EncryptText.dll
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\BCrypt.Net.dll
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.DataAccess.pdb
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.DataAccess.dll.config
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.BussinessLogic.pdb
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.AssemblyReference.cache
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.CoreCompileInputs.cache
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.CopyComplete
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.dll
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.pdb
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll.config
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.Service_Publisher.pdb
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.BussinessLogic.dll
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.DataAccess.dll
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\Newtonsoft.Json.dll
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\EncryptText.dll
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\BCrypt.Net.dll
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.DataAccess.pdb
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.DataAccess.dll.config
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\SGF.BussinessLogic.pdb
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\Newtonsoft.Json.pdb
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\bin\EncryptText.pdb
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.AssemblyReference.cache
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.CoreCompileInputs.cache
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\Service_.7BDD48D5.Up2Date
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.dll
+D:\Fabian\PROYECTOS\Floricola\Código Fuente\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.pdb
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\Newtonsoft.Json.pdb
+D:\Proyectos\Floricola\Código Fuente\SGF\Service_Publisher\bin\EncryptText.pdb
+C:\Proyecto\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll.config
+C:\Proyecto\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll
+C:\Proyecto\SGF\Service_Publisher\bin\SGF.Service_Publisher.pdb
+C:\Proyecto\SGF\Service_Publisher\bin\SGF.BussinessLogic.dll
+C:\Proyecto\SGF\Service_Publisher\bin\SGF.DataAccess.dll
+C:\Proyecto\SGF\Service_Publisher\bin\Newtonsoft.Json.dll
+C:\Proyecto\SGF\Service_Publisher\bin\EncryptText.dll
+C:\Proyecto\SGF\Service_Publisher\bin\BCrypt.Net.dll
+C:\Proyecto\SGF\Service_Publisher\bin\SGF.DataAccess.pdb
+C:\Proyecto\SGF\Service_Publisher\bin\SGF.DataAccess.dll.config
+C:\Proyecto\SGF\Service_Publisher\bin\SGF.BussinessLogic.pdb
+C:\Proyecto\SGF\Service_Publisher\bin\Newtonsoft.Json.pdb
+C:\Proyecto\SGF\Service_Publisher\bin\EncryptText.pdb
+C:\Proyecto\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.AssemblyReference.cache
+C:\Proyecto\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.CoreCompileInputs.cache
+C:\Proyecto\SGF\Service_Publisher\obj\Debug\Service_.7BDD48D5.Up2Date
+C:\Proyecto\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.dll
+C:\Proyecto\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.pdb
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\Newtonsoft.Json.dll
+D:\Fabian\PROYECTOS\SGF\Service_Publisher\bin\Newtonsoft.Json.pdb
+D:\Proyecto\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll.config
+D:\Proyecto\SGF\Service_Publisher\bin\SGF.Service_Publisher.dll
+D:\Proyecto\SGF\Service_Publisher\bin\SGF.Service_Publisher.pdb
+D:\Proyecto\SGF\Service_Publisher\bin\SGF.BussinessLogic.dll
+D:\Proyecto\SGF\Service_Publisher\bin\SGF.DataAccess.dll
+D:\Proyecto\SGF\Service_Publisher\bin\Newtonsoft.Json.dll
+D:\Proyecto\SGF\Service_Publisher\bin\EncryptText.dll
+D:\Proyecto\SGF\Service_Publisher\bin\BCrypt.Net.dll
+D:\Proyecto\SGF\Service_Publisher\bin\SGF.DataAccess.pdb
+D:\Proyecto\SGF\Service_Publisher\bin\SGF.DataAccess.dll.config
+D:\Proyecto\SGF\Service_Publisher\bin\SGF.BussinessLogic.pdb
+D:\Proyecto\SGF\Service_Publisher\bin\Newtonsoft.Json.pdb
+D:\Proyecto\SGF\Service_Publisher\bin\EncryptText.pdb
+D:\Proyecto\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.AssemblyReference.cache
+D:\Proyecto\SGF\Service_Publisher\obj\Debug\Service_Publisher.csproj.CoreCompileInputs.cache
+D:\Proyecto\SGF\Service_Publisher\obj\Debug\Service_.7BDD48D5.Up2Date
+D:\Proyecto\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.dll
+D:\Proyecto\SGF\Service_Publisher\obj\Debug\SGF.Service_Publisher.pdb

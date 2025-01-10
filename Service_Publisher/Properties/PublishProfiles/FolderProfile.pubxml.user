@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\f-lovato\Desktop\Publicar\Zurcalo\Servicio</_PublishTargetUrl>
+    <History>True|2025-01-09T14:21:51.3200599Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BCrypt.Net.dll">
+      <publishTime>12/27/2023 11:54:10</publishTime>
+    </File>
+    <File Include="bin/EncryptText.dll">
+      <publishTime>06/07/2023 11:40:48</publishTime>
+    </File>
+    <File Include="bin/EncryptText.pdb">
+      <publishTime>11/06/2019 07:48:30</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/06/2024 23:52:04</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.pdb">
+      <publishTime>07/18/2018 11:49:44</publishTime>
+    </File>
+    <File Include="bin/SGF.BussinessLogic.dll">
+      <publishTime>01/09/2025 09:21:48</publishTime>
+    </File>
+    <File Include="bin/SGF.BussinessLogic.pdb">
+      <publishTime>01/09/2025 09:21:48</publishTime>
+    </File>
+    <File Include="bin/SGF.DataAccess.dll">
+      <publishTime>01/09/2025 09:21:46</publishTime>
+    </File>
+    <File Include="bin/SGF.DataAccess.dll.config">
+      <publishTime>12/31/2024 00:09:12</publishTime>
+    </File>
+    <File Include="bin/SGF.DataAccess.pdb">
+      <publishTime>01/09/2025 09:21:46</publishTime>
+    </File>
+    <File Include="bin/SGF.Service_Publisher.dll">
+      <publishTime>01/09/2025 09:21:50</publishTime>
+    </File>
+    <File Include="bin/SGF.Service_Publisher.pdb">
+      <publishTime>01/09/2025 09:21:50</publishTime>
+    </File>
+    <File Include="SGF_Service.svc">
+      <publishTime>04/15/2024 16:32:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/09/2025 09:21:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
